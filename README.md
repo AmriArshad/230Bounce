@@ -1,1 +1,2 @@
-# 230 Assignment 2 "Bounce"
+# 230-A2
+COMPSCI 230 A2
