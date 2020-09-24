@@ -16,8 +16,8 @@ public class RectangleShape extends Shape {
 	/**
 	 * Creates a RectangleShape object with a specified x and y position.
 	 */
-	public Shape(int x, int y) {
-		this(x, y, DEFAULT_DELTA_X, DEFAULT_DELTA_Y, DEFAULT_WIDTH, DEFAULT_HEIGHT);
+	public RectangleShape(int x, int y) {
+		super(x, y);
 	}
 
 	/**
