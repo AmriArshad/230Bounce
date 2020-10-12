@@ -45,9 +45,9 @@ public class AnimationViewer extends JPanel implements ActionListener {
 		_shapes.add(s1);
 
 		// change directory of image
-		// Image image = ImageRectangleShape.makeImage("enter image path here", 50);
-		// Shape s2 = new ImageRectangleShape(1, 1, image);
-		// _shapes.add(s2);
+		Image image = ImageRectangleShape.makeImage("enter image path here", 50);
+		Shape s2 = new ImageRectangleShape(1, 1, image);
+		_shapes.add(s2);
 
 		Shape s3 = new OvalShape();
 		_shapes.add(s3);

@@ -2,7 +2,6 @@ package bounce;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Abstract superclass to represent the general concept of a Shape. This class
