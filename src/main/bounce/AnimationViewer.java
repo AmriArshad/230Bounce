@@ -45,15 +45,22 @@ public class AnimationViewer extends JPanel implements ActionListener {
 		_shapes.add(s1);
 
 		// change directory of image
-		Image image = ImageRectangleShape.makeImage("enter image path here", 50);
-		Shape s2 = new ImageRectangleShape(1, 1, image);
-		_shapes.add(s2);
+		// Image image = ImageRectangleShape.makeImage("enter image path here", 50);
+		// Shape s2 = new ImageRectangleShape(1, 1, image);
+		// _shapes.add(s2);
 
 		Shape s3 = new OvalShape();
 		_shapes.add(s3);
 
 		Shape s4 = new DynamicRectangleShape(20, 20, 5, 5, 10, 10);
 		_shapes.add(s4);
+
+		NestingShape s5 = new NestingShape(50, 50 ,3, 3 ,150, 100);
+		s5.add(new OvalShape());
+		s5.add(new DynamicRectangleShape(20, 20, 1, 1, 10, 10));
+		s5.add(new RectangleShape(10, 10, 5, 7));
+		_shapes.add(s5);
+
 		// Start the animation.
 		_timer.start();
 	}
