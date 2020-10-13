@@ -20,15 +20,14 @@ public class DynamicRectangleShape extends RectangleShape{
         COLOR = color;
     }
 
-    @Override
-    public void paint(Painter painter) {
+    public void doPaint(Painter painter) {
 		if (bounced == false){
 			painter.setColor(COLOR);
 			painter.fillRect(_x,_y,_width,_height);
 			painter.setColor(Color.black);	
 		}
 		else{
-			super.paint(painter);
+			super.doPaint(painter);
 		}
     }
 

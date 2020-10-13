@@ -39,6 +39,10 @@ public class NestingShape extends Shape{
         super(x, y, deltaX, deltaY, width, height);
     }
 
+    public NestingShape(int x, int y, int deltaX, int deltaY, int width, int height, String text) {
+		super(x,y,deltaX,deltaY,width,height,text);
+    }
+
 /**
  * Moves a NestingShape object (including its children) within the bounds specified by arguments
  * width and height. A NestingShape first moves itself, and then moves its children.
@@ -56,12 +60,11 @@ public class NestingShape extends Shape{
  * the NestingShape’s border has been painted, a NestingShape paints its children.
  */
     
-    @Override
-    public void paint(Painter painter) {
+    public void doPaint(Painter painter) {
         painter.drawRect(_x,_y,_width,_height);
         painter.translate(this.x(), this.y());
         for (Shape shape: _children){
-            shape.paint(painter);
+            shape.doPaint(painter);
         }
         painter.translate(-this.x(), -this.y());
     }
