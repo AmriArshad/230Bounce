@@ -54,16 +54,6 @@ public class AnimationViewer extends JPanel implements ActionListener {
 
 		Shape s4 = new DynamicRectangleShape(20, 20, 5, 5, 10, 10);
 		_shapes.add(s4);
-
-		NestingShape s5 = new NestingShape(50, 50 ,3, 3 ,150, 100);
-		s5.add(new OvalShape());
-		s5.add(new DynamicRectangleShape(20, 20, 1, 1, 10, 10));
-		s5.add(new RectangleShape(10, 10, 5, 7));
-		_shapes.add(s5);
-
-		RectangleShape s6 = new RectangleShape(10, 10, 5, 5, 60, 40, "This is cool!");
-		_shapes.add(s6);
-
 		// Start the animation.
 		_timer.start();
 	}

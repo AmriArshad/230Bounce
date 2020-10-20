@@ -20,12 +20,9 @@ public class OvalShape extends Shape{
     public OvalShape(int x, int y, int deltaX, int deltaY, int width, int height) {
 		super(x,y,deltaX,deltaY,width,height);
 	}
-    
-    public OvalShape(int x, int y, int deltaX, int deltaY, int width, int height, String text) {
-		super(x,y,deltaX,deltaY,width,height,text);
-    }
-    
-    public void doPaint(Painter painter) {
+
+    @Override
+    public void paint(Painter painter) {
         painter.drawOval(_x,_y,_width,_height);
     }
 }

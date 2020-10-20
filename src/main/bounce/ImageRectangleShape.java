@@ -52,7 +52,8 @@ public class ImageRectangleShape extends RectangleShape {
         return outputImage;
     }
 
-    public void doPaint(Painter painter){
+    @Override
+    public void paint(Painter painter){
         painter.drawImage(this.image, x(), y(), sw, sh);
     }
 
