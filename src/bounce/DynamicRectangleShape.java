@@ -18,7 +18,12 @@ public class DynamicRectangleShape extends RectangleShape{
     public DynamicRectangleShape(int x, int y, int deltaX, int deltaY, int width, int height, Color color){
         super(x, y, deltaX, deltaY, width, height);
         COLOR = color;
-    }
+	}
+	
+	public DynamicRectangleShape(int x, int y, int deltaX, int deltaY, int width, int height, String text, Color color){
+		super(x, y, deltaX, deltaY, width, height, text);
+		COLOR = color;
+	}
 
     public void doPaint(Painter painter) {
 		if (bounced == false){
