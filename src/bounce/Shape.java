@@ -166,6 +166,10 @@ public abstract class Shape {
 		return _height;
 	}
 	
+	public String text(){
+		return _text;
+	}
+
 	/**
 	 * Returns a String whose value is the fully qualified name of this class 
 	 * of object. E.g., when called on a RectangleShape instance, this method 
