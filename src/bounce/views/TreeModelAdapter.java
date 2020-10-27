@@ -13,7 +13,7 @@ import bounce.Shape;
 
 public class TreeModelAdapter implements TreeModel {
     private ShapeModel _adaptee;
-    private List<TreeModelListener> _listeners = new ArrayList<TreeModelListener>();
+    protected List<TreeModelListener> _listeners = new ArrayList<TreeModelListener>();
 
     public TreeModelAdapter(ShapeModel model){
         _adaptee = model;
@@ -86,4 +86,8 @@ public class TreeModelAdapter implements TreeModel {
         
     }
     
+    public ShapeModel adaptee(){
+        return _adaptee;
+    }
+
 }
