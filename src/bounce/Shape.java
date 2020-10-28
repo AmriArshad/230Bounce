@@ -116,16 +116,16 @@ public abstract class Shape {
 
 	protected abstract void doPaint(Painter painter);
 
-	/**
-	 * Returns this Shape object's x position.
-	 */
-
 	public final void paint(Painter painter){
 		doPaint(painter);
 		if (_text != null){
 			painter.drawCenteredText(_text, x()+(width()/2), y()+(height()/2));
 		}
 	}
+
+	/**
+	 * Returns this Shape object's x position.
+	 */
 
 	public int x() {
 		return _x;
